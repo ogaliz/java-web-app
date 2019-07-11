@@ -10,7 +10,7 @@ public class Controlador {
 	@RequestMapping
 	public String muestrapagina() {
 		
-		return "paginaEjemplo";
+		return "paginaEjemplo"; // retornamos el nombre de la vista sin la extensión de archivo -> una página JSP
 		
 	}
 	

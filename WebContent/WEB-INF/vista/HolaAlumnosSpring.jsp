@@ -8,11 +8,7 @@
 </head>
 <body>
 
-	<h1>Esqueleto de una web App de ejemplo con Spring.</h1>
-	
-	<br>
-	
-	<a href="muestraFormulario">Ves al formulario web</a>
+	<p>Hola ${param.nombreAlumno}. Estamos en el curso de Spring</p>
 
 </body>
 </html>

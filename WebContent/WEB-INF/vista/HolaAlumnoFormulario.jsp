@@ -8,11 +8,10 @@
 </head>
 <body>
 
-	<h1>Esqueleto de una web App de ejemplo con Spring.</h1>
-	
-	<br>
-	
-	<a href="muestraFormulario">Ves al formulario web</a>
+	<form action="procesarFormulario" method="get">
+		<input type="text" name="nombreAlumno">
+		<input type="submit">
+	</form>
 
 </body>
 </html>
