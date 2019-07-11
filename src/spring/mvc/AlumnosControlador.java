@@ -1,6 +1,9 @@
 package spring.mvc;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -20,4 +23,25 @@ public class AlumnosControlador {
 		
 		return "HolaAlumnosSpring"; // retornamos el nombre de la vista -> una página JSP
 	}
+	
+	@RequestMapping("/procesarFormulario2")
+	public String otroProcesoFormulario(HttpServletRequest request, Model modelo) {
+		
+		String nombre = request.getParameter("nombreAlumno");
+		
+		nombre+=" es el mejor alumno";
+		
+		String mensajeFinal = "Quien es el mejor alumno? " + nombre;
+		
+//		Agregando información al modelo
+		modelo.addAttribute("mensajeClaro", mensajeFinal); // mensajeFinal lo identificamos como 'mensajeClaro'
+		
+		return "HolaAlumnosSpring";
+		
+	}
+	
+	
+	
+	
+	
 }

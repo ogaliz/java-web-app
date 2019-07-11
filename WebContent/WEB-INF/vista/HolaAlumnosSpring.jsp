@@ -9,6 +9,8 @@
 <body>
 
 	<p>Hola ${param.nombreAlumno}. Estamos en el curso de Spring</p>
+	
+	<p>Atencion a todos ${ mensajeClaro }</p>
 
 </body>
 </html>
